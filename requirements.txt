@@ -2,3 +2,8 @@ requests_async
 pycryptodome
 QScintilla
 websockets
+qasync
+pyinstaller
+pyqt5-tools
+PyQt5Designer
+cx_freeze

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>LoxQtGui</class>
+ <widget class="QMainWindow" name="LoxQtGui">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>LoxQtGui</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -170,7 +170,7 @@
      <x>0</x>
      <y>0</y>
      <width>823</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -189,7 +189,7 @@
   <connection>
    <sender>btn_connect</sender>
    <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
+   <receiver>LoxQtGui</receiver>
    <slot>connect_to_loxone()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -205,7 +205,7 @@
   <connection>
    <sender>btn_disconnect</sender>
    <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
+   <receiver>LoxQtGui</receiver>
    <slot>disconnect_from_loxone()</slot>
    <hints>
     <hint type="sourcelabel">

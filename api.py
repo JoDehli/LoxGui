@@ -249,9 +249,6 @@ class LoxWs:
 
 
     async def reconnect(self):
-        # for task in self._pending:
-        #     task.cancel()
-        #
         self._pending = []
         for i in range(self.connect_retries):
             _LOGGER.debug("reconnect: {} from {}".format(i + 1, self.connect_retries))

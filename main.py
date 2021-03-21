@@ -1,15 +1,15 @@
 import asyncio
+import json
 import logging
-import sys
+import traceback
 
-from api import LoxApp, LoxWs
 import qasync
 from PyQt5 import uic
 from PyQt5.QtGui import QPalette
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QMainWindow
 from qasync import asyncSlot, asyncClose
-import traceback
-import json
+
+from api import LoxApp, LoxWs
 
 logging.getLogger('asyncio').setLevel(logging.ERROR)
 logging.getLogger('asyncio.coroutines').setLevel(logging.ERROR)
@@ -21,10 +21,6 @@ class LoxoneConnecionGui(QMainWindow):
     def __init__(self):
         super(LoxoneConnecionGui, self).__init__()
         uic.loadUi('Main.ui', self)
-        # self.log.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-        # logging.getLogger().addHandler(self.log)
-        # logging.getLogger().setLevel(logging.DEBUG)
-
         self.api = None
         self.show()
 
